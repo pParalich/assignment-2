@@ -11,15 +11,15 @@ public interface MyList<T> extends Iterable<T> {
     void remove(int index);
     void removeFirst();
     void removeLast();
-    void sort(); // Проверь, что здесь void
+    void sort();
     int indexOf(Object object);
     int lastIndexOf(Object object);
     boolean exists(Object object);
-    public Object[] toArray(); // Проверь возвращаемый тип
+    public Object[] toArray();
     void clear();
     int size();
     void set(int index, T item);
 
     @Override
-    Iterator<T> iterator(); // Это из-за extends Iterable
+    Iterator<T> iterator();
 }
